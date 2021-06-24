@@ -48,7 +48,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/ethereum/web3.js.git"
+        "url": "https://github.com/Apocentre/web3.js.git"
     },
     "homepage": "https://github.com/ethereum/web3.js",
     "bugs": {
