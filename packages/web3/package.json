@@ -1,6 +1,6 @@
 {
     "name": "web3",
-    "version": "1.3.5",
+    "version": "1.3.4",
     "description": "Ethereum JavaScript API",
     "repository": "https://github.com/ethereum/web3.js",
     "license": "LGPL-3.0",
