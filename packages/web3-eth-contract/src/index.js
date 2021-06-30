@@ -932,7 +932,12 @@ Contract.prototype._executeMethod = function _executeMethod(){
                 inputFormatter: [formatters.inputCallFormatter, formatters.inputDefaultBlockNumberFormatter],
                 // add output formatter for decoding
                 outputFormatter: function (result) {
-                    return _this._parent._decodeMethodReturn(_this._method.outputs, result);
+                    try {
+                        return _this._parent._decodeMethodReturn(_this._method.outputs, result);
+                    }
+                    catch(error) {
+                        throw new Error(`Error in eth_call: ${error.message} -- params: ${JSON.stringify({args})}`)
+                    }
                 },
                 requestManager: _this._parent._requestManager,
                 accounts: ethAccounts, // is eth.accounts (necessary for wallet signing)
