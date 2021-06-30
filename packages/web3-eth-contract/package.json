@@ -1,6 +1,6 @@
 {
     "name": "@apocentre/web3-eth-contract",
-    "version": "1.3.4-beta.5",
+    "version": "1.3.4-beta.6",
     "description": "Web3 module to interact with Ethereum smart contracts.",
     "repository": "https://github.com/Apocentre/web3.js",
     "license": "LGPL-3.0",
@@ -28,5 +28,5 @@
         "dtslint": "^3.4.1",
         "typescript": "^3.9.5"
     },
-    "gitHead": "775761847ca0d0b88e6f79288cd46eba7f181e83"
+    "gitHead": "194a94694eedca60a3496154bbb33d129fc32668"
 }

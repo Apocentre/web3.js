@@ -64,7 +64,7 @@ Batch.prototype.execute = function () {
                 try {
                     requests[index].callback(null, requests[index].format ? requests[index].format(result.result) : result.result);
                 } catch (err) {
-                    requests[index].callback(err);
+                    requests[index].callback(new Error(`Request manager error. Original: ${error.message} -- requests: ${JSON.stringify(requests)}`));
                 }
             }
         });

@@ -895,7 +895,14 @@ Contract.prototype._executeMethod = function _executeMethod(){
         if(args.type === 'call') {
             payload.params.push(formatters.inputDefaultBlockNumberFormatter.call(this._parent, args.defaultBlock));
             payload.method = 'eth_call';
-            payload.format = this._parent._decodeMethodReturn.bind(null, this._method.outputs);
+            payload.format = (results) => {
+                try {
+                    return this._parent._decodeMethodReturn(this._method.outputs, results);   
+                }
+                catch(error) {
+                    throw new Error(`Error in call: ${error.message} -- params: ${JSON.stringify({address: this._address, arguments: arguments})}`)
+                }
+            }
         } else {
             payload.method = 'eth_sendTransaction';
         }
