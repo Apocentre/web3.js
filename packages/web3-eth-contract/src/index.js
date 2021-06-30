@@ -32,7 +32,7 @@
 
 
 var _ = require('underscore');
-var core = require('web3-core');
+var core = require('@apocentre/web3-core');
 var Method = require('web3-core-method');
 var utils = require('web3-utils');
 var Subscription = require('web3-core-subscriptions').subscription;

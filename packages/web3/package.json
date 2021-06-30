@@ -1,6 +1,6 @@
 {
     "name": "@apocentre/web3",
-    "version": "1.3.4-beta.19",
+    "version": "1.3.4-beta.20",
     "description": "Ethereum JavaScript API",
     "repository": "https://github.com/Apocentre/web3.js",
     "license": "LGPL-3.0",
@@ -50,7 +50,7 @@
     ],
     "dependencies": {
         "@apocentre/web3-core": "1.3.4-beta.2",
-        "@apocentre/web3-eth": "1.3.4-beta.10",
+        "@apocentre/web3-eth": "1.3.4-beta.11",
         "web3-bzz": "1.3.4",
         "web3-eth-personal": "1.3.4",
         "web3-net": "1.3.4",
@@ -62,5 +62,5 @@
         "dtslint": "^3.4.1",
         "typescript": "^3.9.5"
     },
-    "gitHead": "3784f0e70d9aabde1bb9204c73be3dd4cc5ce055"
+    "gitHead": "8ff91d9d2d8c005030ee31a8601a9e43409ec4fd"
 }

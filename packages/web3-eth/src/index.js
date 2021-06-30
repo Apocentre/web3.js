@@ -23,7 +23,7 @@
 "use strict";
 
 var _ = require('underscore');
-var core = require('web3-core');
+var core = require('@apocentre/web3-core');
 var helpers = require('web3-core-helpers');
 var Subscriptions = require('web3-core-subscriptions').subscriptions;
 var Method = require('web3-core-method');
