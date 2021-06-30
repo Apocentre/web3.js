@@ -936,7 +936,7 @@ Contract.prototype._executeMethod = function _executeMethod(){
                         return _this._parent._decodeMethodReturn(_this._method.outputs, result);
                     }
                     catch(error) {
-                        throw new Error(`Error in eth_call: ${error.message} -- params: ${JSON.stringify({args})}`)
+                        throw new Error(`Error in eth_call: ${error.message} -- params: ${JSON.stringify({address: this._address, arguments: arguments})}`)
                     }
                 },
                 requestManager: _this._parent._requestManager,
