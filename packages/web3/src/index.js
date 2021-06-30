@@ -29,7 +29,7 @@
 
 
 var version = require('../package.json').version;
-var core = require('web3-core');
+var core = require('@apocentre/web3-core');
 var Eth = require('@apocentre/web3-eth');
 var Net = require('web3-net');
 var Personal = require('web3-eth-personal');

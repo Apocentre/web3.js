@@ -51,7 +51,7 @@
     "dependencies": {
         "@apocentre/web3-eth": "1.3.4-beta.9",
         "web3-bzz": "1.3.4",
-        "web3-core": "1.3.4-beta.0",
+        "@apocentre/web3-core": "1.3.4-beta.0",
         "web3-eth-personal": "1.3.4",
         "web3-net": "1.3.4",
         "web3-shh": "1.3.4",
